@@ -1,1 +1,4 @@
 SIR model project
+Each agent shares the same properties, in the future they might share more.
+We want to implement logic for checking different parameters of different diseases.
+We decided on macro model where main variable is if a person knows other people.
