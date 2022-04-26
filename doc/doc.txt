@@ -2,3 +2,11 @@ SIR model project
 Each agent shares the same properties, in the future they might share more.
 We want to implement logic for checking different parameters of different diseases.
 We decided on macro model where main variable is if a person knows other people.
+
+Constants of state change:
+    Susceptible to Infected 0,01
+    Infected to Recovered 0,01
+
+
+Susceptible to Infected = moc_relacji * constant * age/128
+Infected to recovered = constant * age/128
