@@ -26,7 +26,6 @@ class Simulation:
         self.agents = self.create_agents(self.n_agents)
         self.constants = constants
         self.new_states = [State.Susceptible for i in range(self.n_agents)]
-        # TODO: set proper values
         self.n_agents_susceptible = self.n_agents
         self.n_agents_infected = 0
         self.n_agents_recovered = 0
