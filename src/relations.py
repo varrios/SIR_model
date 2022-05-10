@@ -15,7 +15,7 @@ class Relationships:
             dane = file.read().splitlines(False)
             for line in dane:
                 kto, z_kim, moc_relacji = line.split(",")
-                new_relation = Relationship(kto, z_kim, moc_relacji)
+                new_relation = Relationship(int(kto), int(z_kim), float(moc_relacji))
                 self.relationships.append(new_relation)
 
     def is_in_relation(self, n1, n2):
@@ -27,4 +27,4 @@ class Relationships:
     def get_all_neighbours(self, n):
         for element in self.relationships:
             if element.kto == n:
-                yield element
+                yield element.kto
